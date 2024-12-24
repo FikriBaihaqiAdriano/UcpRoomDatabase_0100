@@ -205,7 +205,15 @@ fun FormBarang(
             text = errorState.stok ?: "",
             color = Color.Red
         )
-
+        // Supplier
+        DropdownSpl(
+            selectedValue = barangEvent.namaSuplier,
+            options = DataNama.DataSupplier(),
+            label = "Nama Supplier",
+            onValueChangedEvent = { OpsiSpl ->
+                onValueChange(barangEvent.copy(namaSuplier = OpsiSpl))
+            }
+        )
     }
 
 }
