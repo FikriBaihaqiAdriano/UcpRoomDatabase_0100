@@ -153,11 +153,18 @@ fun CardBrgView(
     onClick: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
+    val stok = barang.stok.toIntOrNull() ?: 0
 
+    val cardColor = when {
+        stok == 0 -> Color.Gray
+        stok in 1..10 -> Color.Red
+        else -> Color.Green
+    }
 
     Card (
         onClick = onClick,
-        modifier = modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+        modifier = modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+        colors = CardDefaults.cardColors(containerColor = cardColor)
     ){
         Column (
             modifier = Modifier.padding(16.dp)
@@ -168,7 +175,7 @@ fun CardBrgView(
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.id),
-                    contentDescription = "ID",
+                    contentDescription = "ID barang",
                     modifier = Modifier.size(40.dp)
                 )
                 Spacer(modifier = Modifier.padding(8.dp))
@@ -186,7 +193,7 @@ fun CardBrgView(
             ){
                 Image(
                     painter = painterResource(id = R.drawable.nama),
-                    contentDescription = "nama",
+                    contentDescription = "nama barang",
                     modifier = Modifier.size(40.dp)
                 )
                 Spacer(modifier = Modifier.padding(8.dp))
