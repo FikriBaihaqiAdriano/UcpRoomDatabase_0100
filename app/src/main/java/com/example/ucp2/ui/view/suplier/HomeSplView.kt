@@ -1,5 +1,6 @@
 package com.example.ucp2.ui.view.suplier
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -8,13 +9,11 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.SnackbarHostState
@@ -27,10 +26,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.ucp2.R
 import com.example.ucp2.data.entity.Suplier
 import com.example.ucp2.ui.customwidget.TopAppBar
 import com.example.ucp2.ui.viewmodel.PenyediaViewModel
@@ -161,7 +162,11 @@ fun CardSplView(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ){
-                Icon(imageVector = Icons.Filled.DateRange,contentDescription = "")
+                Image(
+                    painter = painterResource(id = R.drawable.id),
+                    contentDescription = "id suplier",
+                    modifier = Modifier.size(40.dp)
+                )
                 Spacer(modifier = Modifier.padding(8.dp))
                 Text(
                     text = suplier.id_s,
@@ -174,7 +179,11 @@ fun CardSplView(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ){
-                Icon(imageVector = Icons.Filled.DateRange,contentDescription = "")
+                Image(
+                    painter = painterResource(id = R.drawable.nama_s),
+                    contentDescription = "nama suplier",
+                    modifier = Modifier.size(40.dp)
+                )
                 Spacer(modifier = Modifier.padding(8.dp))
                 Text(
                     text = suplier.nama_s,
@@ -186,7 +195,11 @@ fun CardSplView(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ){
-                Icon(imageVector = Icons.Filled.DateRange,contentDescription = "")
+                Image(
+                    painter = painterResource(id = R.drawable.kontak),
+                    contentDescription = "kontak",
+                    modifier = Modifier.size(40.dp)
+                )
                 Spacer(modifier = Modifier.padding(8.dp))
                 Text(
                     text = suplier.kontak,
@@ -199,7 +212,11 @@ fun CardSplView(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ){
-                Icon(imageVector = Icons.Filled.DateRange,contentDescription = "")
+                Image(
+                painter = painterResource(id = R.drawable.alamat),
+                contentDescription = "alamat",
+                modifier = Modifier.size(40.dp)
+            )
                 Spacer(modifier = Modifier.padding(8.dp))
                 Text(
                     text = suplier.alamat,
