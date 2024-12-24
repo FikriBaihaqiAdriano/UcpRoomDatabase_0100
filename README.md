@@ -12,3 +12,7 @@ Barang
 ![Screenshot_20241224_134249](https://github.com/user-attachments/assets/06407b33-9f55-48cf-a3cd-d1203838bc5a)
 ![Screenshot_20241224_134324](https://github.com/user-attachments/assets/bf828388-ef62-466a-874b-878b692dca3e)
 ![Screenshot_20241224_134344](https://github.com/user-attachments/assets/6fa1f329-a5f7-49bc-af77-b8b5e115ad52)
+
+
+Link Penjelasan 
+https://umyac.sharepoint.com/:v:/s/tes242/EYdr-NBzn_BAtDwB7Xn2o88B8m9dm3ZvCEhqlqxS-IC8rg?e=cmKFXK&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
